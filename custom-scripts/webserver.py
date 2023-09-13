@@ -18,7 +18,7 @@ class MyHandler(BaseHTTPRequestHandler):
         s.send_response(200)
         s.send_header("Content-type", "text/html")
         s.end_headers()
-        s.wfile.write("<html><head><title>Title goes here.</title></head>".encode())
+        s.wfile.write("<html><head><title>TP1 Sisop </title></head>".encode())
         s.wfile.write("<body><p>This is a test.</p>".encode())
         # If someone went to "http://something.somewhere.net/foo/bar/",
         # then s.path equals "/foo/bar/".
