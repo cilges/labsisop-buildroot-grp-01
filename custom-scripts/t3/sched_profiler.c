@@ -2,6 +2,7 @@
 #include <pthread.h>
 #include <semaphore.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int THREADS = 4;
 int BUFFER_SIZE = 100000;
@@ -29,11 +30,24 @@ void *task(void *arg)
     pthread_exit(NULL);
 }
 
+// void show_pre()
+// {
+//     for (int i = 0; i < BUFFER_SIZE; i++)
+//     {
+//         printf("%c", buffer[i]);
+//     }
+// }
+
 void show_buffer()
 {
-    for (int i = 0; i < BUFFER_SIZE; i++)
+    bool isDifferent = 1;
+    printf("%c", buffer[0]);
+    for (int i = 1; i < BUFFER_SIZE; i++)
     {
-        printf("%c", buffer[i]);
+        isDifferent = buffer[i] != buffer[i-1];
+        if (isDifferent) {
+            printf("%c", buffer[i-1]);
+        }
     }
 }
 
@@ -57,6 +71,8 @@ void count_buffer()
             aux = buffer[i];
         }
     }
+
+    printf("\n");
 
     for (int i = 0; i < THREADS; i++)
     {
@@ -87,8 +103,9 @@ int main(int argc, char *argv[])
     }
     pthread_mutex_destroy(&mutex);
 
-    // show_buffer();
     // free(buffer);
+    // show_pre();
+    show_buffer();
     count_buffer();
     return 0;
 }
