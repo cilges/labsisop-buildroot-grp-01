@@ -1,0 +1,1 @@
+cmd_/workspaces/labsisop-buildroot-grp-01/modules/hello/built-in.o :=  rm -f /workspaces/labsisop-buildroot-grp-01/modules/hello/built-in.o; ar rcSTPD /workspaces/labsisop-buildroot-grp-01/modules/hello/built-in.o

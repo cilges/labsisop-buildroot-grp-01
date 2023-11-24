@@ -1,0 +1,15 @@
+--2023-09-27 21:36:01--  https://moodle.pucrs.br/mod/resource/view.php?id=2902827
+Resolving moodle.pucrs.br (moodle.pucrs.br)... 104.18.6.39, 104.18.7.39
+Connecting to moodle.pucrs.br (moodle.pucrs.br)|104.18.6.39|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://moodle.pucrs.br/login/index.php [following]
+--2023-09-27 21:36:02--  https://moodle.pucrs.br/login/index.php
+Reusing existing connection to moodle.pucrs.br:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘view.php?id=2902827’
+
+view.php?id=2902827                       [<=>                                                                     ]       0  --.-KB/s               view.php?id=2902827                       [ <=>                                                                    ]  30.45K  --.-KB/s    in 0s      
+
+2023-09-27 21:36:03 (90.6 MB/s) - ‘view.php?id=2902827’ saved [31185]
+
